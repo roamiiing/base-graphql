@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "compilerOptions": {
+    "target": "es2018",
+    "lib": ["es2018", "esnext.asynciterable"],
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "src",
+    "paths": {
+      "@app": ["app/index.ts"],
+      "@api": ["api/index.ts"],
+      "@server": ["server/index.ts"],
+      "@models": ["models/index.ts"],
+      "@utils/*": ["utils/*/index.ts"],
+      "@env": ["env/index.ts"],
+      "@named/*": ["named/*"],
+      "@definitions/*": ["definitions/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
